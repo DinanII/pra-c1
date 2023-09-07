@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Fellix';
+    src: local('Fellix Bold'), local('Fellix-Bold'),
+        url('Fellix-Bold.woff2') format('woff2'),
+        url('Fellix-Bold.woff') format('woff'),
+        url('Fellix-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
