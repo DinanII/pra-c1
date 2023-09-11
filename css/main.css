@@ -16,6 +16,9 @@
     margin: 0 auto;
 }
 
+.logo {
+    width: 75%;
+}
 
 .flexcontainer {
     display: flex;
@@ -23,8 +26,18 @@
     align-items: center;
 }
 
+h2 {
+    font-size: 150%;
+    margin: 2% 0%;
+}
 
-/* Afbeelding werd niet goed weergegeven. Daarom hieronder de inport van het Fellix Bold font */
+h3 {
+    font-size: 100%;
+    margin: 2% 0%;
+}
+
+
+/* Curio font */
 @font-face {
     font-family: 'Fellix';
     src:
