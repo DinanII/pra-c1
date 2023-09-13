@@ -37,6 +37,12 @@ h3 {
 }
 
 
+ul {
+    overflow: auto;
+    list-style-type: disc;
+}
+
+
 /* Curio font */
 @font-face {
     font-family: 'Fellix';
@@ -54,6 +60,12 @@ h3 {
     HEADER
 
 -------------------------------------------------*/
+
+header {
+    position: fixed;
+    background-color: white;
+    width: 80%;
+}
 
 .logo p {
     font-family: 'Fellix', Arial, Helvetica, sans-serif;
@@ -82,6 +94,7 @@ h3 {
 .mainIntroImg {
     width: 100%;
     height: 70%;
+    margin-top: 15%;
 }
 
 
@@ -96,9 +109,7 @@ h3 {
     margin: 2% 0% 2% 0%;
 
 }
-/* .subject .text {
-    font-size: smaller;
-} */
+
 .subject img {
     width: 20%;
     height: 10%;
@@ -109,17 +120,32 @@ h3 {
 }
 
 .bigger {
-    width: 30% !important;
+    width: 45% !important;
 }
 
-/* 
-    Recording school (Roosendaal)
-*/
 
-/* .school iframe {
-    width:"80%";
-    height:"600px";
-} */
+/* ------------------
+    Youtube Iframe
+------------------ */
+.ytIframe {
+    width: 50vw;
+    height: 30vh;
+}
+
+/* ------------------
+    Recording
+------------------ */
+
+.discover {
+    display: flex;
+    justify-content: center;
+    margin: 5% 0% 5% 0%;
+}
+
+.discover iframe {
+    width: 100%;
+    height: 74vh;
+}
 /*-------------------------------------------------
 
     FOOTER
@@ -128,4 +154,60 @@ h3 {
 
 footer {
     background-color: gray;
+    padding: 0.5%;
+    text-align: center;
+}
+.footerText {
+    display: block;
+    align-items: start;
+}
+
+
+/*-------------------------------------------------
+
+    RESPONSIVE GEDEELTE
+
+-------------------------------------------------*/
+@media only screen and (max-width: 1000px) {
+      * {
+        font-size: small;
+      }
+
+      .flexcontainer {
+        display: block;
+      }
+
+      .logo-sd {
+        display: flex;
+        justify-content: center;
+      }
+      .logo {
+        width: 50%;
+      }
+      .mainIntroImg {
+        margin-top: 75%;
+      }
+      .subject {
+        display: block;
+      }
+      .subject img {
+        width: 50%;
+      }
+      .bigger {
+        width: 105% !important;
+        margin: 0% auto;
+      }
+      .ytIframe {
+        width: 100%;
+      }
+      .discover iframe {
+        max-width: 100%;
+        max-height: 200vh;
+      }
+      h2 {
+        margin: 15% 0% 0% 0%;
+      }
+      h3 {
+        margin: 10% 0% 0% 0%;
+      }
 }
