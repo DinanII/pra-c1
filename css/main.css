@@ -8,7 +8,7 @@
     margin: 0%;
     padding: 0%;
     font-family: 'quicksand';
-    font-size: large;
+    font-size: medium;
 }
 
 .wrapper {
@@ -32,7 +32,7 @@ h2 {
 }
 
 h3 {
-    font-size: 100%;
+    font-size: 120%;
     margin: 2% 0%;
 }
 
@@ -83,6 +83,31 @@ h3 {
     width: 100%;
     height: 70%;
 }
+
+
+/* ------------------
+    Subjects
+------------------ */
+
+.subject {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 0% 2% 0%;
+
+}
+/* .subject .text {
+    font-size: smaller;
+} */
+.subject img {
+    width: 20%;
+    height: 10%;
+    margin: 0% 0% 0% 5%;
+}
+.reversed {
+    margin: 0% 5% 0% 0% !important;
+}
+
 
 
 /*-------------------------------------------------
