@@ -42,7 +42,9 @@ ul {
     list-style-type: disc;
 }
 
-
+p {
+    margin: 2.5% 0% 0% 0%;
+}
 
 /* Curio font */
 @font-face {
@@ -142,7 +144,7 @@ header {
     Youtube Iframe
 ------------------ */
 .ytIframe {
-    width: 50vw;
+    width: 35vw;
     height: 30vh;
 }
 
@@ -196,6 +198,10 @@ footer {
     align-items: start;
 }
 
+footer a {
+    text-decoration: none;
+    color: #27ae60;
+}
 
 /*-------------------------------------------------
 
