@@ -157,7 +157,7 @@ header {
 }
 .tour iframe {
     width: 38vw;
-    height: 30vh;
+    height: 34vh;
 }
 
 /* ------------------
@@ -186,6 +186,33 @@ header {
 .teachers {
     background-color: #f2f2f2; /* Or #dcdde1 (same as subjects, orginal: #f2f2f2) */
     padding: 2%;
+}
+
+/* ------------------
+    End section of the site
+------------------ */
+
+.usefulSites a {
+    text-decoration: none;
+    color: #27ae60;
+    display: block;
+    /* border: solid #2c3e50 0.2vw;
+    padding: 0.2%; */
+}
+
+.usefulSites {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-auto-flow: dense;
+    margin: 5% 0% 0% 0%;
+}
+
+.usefulSiteItem {
+    background-color:whitesmoke;
+    margin: 5%;
+    padding: 2.5%;
+    border-radius: 3%;
 }
 /*-------------------------------------------------
 
