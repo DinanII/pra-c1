@@ -164,7 +164,8 @@ header {
     height: 34vh;
 }
 .centred {
-    width: fit-content;
+    /* width: fit-content; */
+    width: 70%;
     margin: 0 auto;
 }
 /* ------------------
