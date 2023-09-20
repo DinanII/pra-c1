@@ -140,6 +140,15 @@ header {
     background-color: #f2f2f2;
     padding: 3%;
 }
+.generalSubject{
+    transition: background-color 0.5s ease;
+    padding: 1%;
+}
+
+.generalSubject:hover {
+    background-color: #ebebeb;
+    box-shadow: 0.1vw 0.2vw #3498db; 
+}
 
 .general h3 {
     color: #e74c3c;
