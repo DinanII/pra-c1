@@ -70,6 +70,10 @@ header {
     width: 80%;
     margin: 0 auto;
     z-index: 1;
+    background-color: #3498db;
+    color: white;
+    padding-top: 1%;
+
 }
 
 .logo p {
@@ -84,9 +88,23 @@ header {
 
 .headernav a {
     text-decoration: none;
-    border: solid black;
     padding: 0.2%;
+    color: white;
+    background-color: #2980b9; 
+    padding: 1%; 
+    border: none; 
+    border-radius: 4px; 
+    text-align: center;
+    display: inline-block;
+    margin: 1%;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    
 }
+.headernav a:hover {
+    background-color: #1c6b99; 
+}
+
 .title a{
     width: 18%;
     margin: 0% 0% 0% 4% ;
@@ -111,30 +129,53 @@ header {
     margin-top: 15%;
 }
 
+
+.intro {
+    background-color: #ecf0f1;
+    padding: 3%;
+}
+
+
+.general {
+    background-color: #f2f2f2;
+    padding: 3%;
+}
+
+.general h3 {
+    color: #e74c3c;
+}
 /* ------------------
     Subjects
 ------------------ */
+
+.subjects {
+    background-color: #dcdde1;
+    padding: 3%;
+}
 
 .subject {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 2% 0% 2% 0%;
-
+    transition: background-color 0.5s ease;
+    padding: 2%;
 }
 
-.subjects {
-    z-index: 2;
+.class:hover {
+    background-color: #fafafa !important;
+    box-shadow: 0.1vw 0.2vw #27ae60 !important; 
 }
-.blockLayout {
-    z-index: 2;
+.subject:hover {
+    background-color: #ebebeb;
+    box-shadow: 0.1vw 0.2vw #3498db; 
 }
-.general {
-    z-index: 2;
+
+
+.subject h3 {
+    color: #27ae60; 
 }
-.after_graduation {
-    z-index: 2;
-}
+
 .subject img {
     width: 20%;
     height: 10%;
@@ -189,10 +230,10 @@ header {
 .teacher {
     border: solid #2c3e50 0.05vw;
     margin: 3%;
-
     justify-items: center;
     align-items: center;
     padding: 5%;
+    transition: background-color 0.5s ease;
 }
 .teachertext {
     margin: 1%;
@@ -205,16 +246,38 @@ header {
     padding: 2%;
 }
 
+.teacher:hover {
+    background-color: #fafafa;
+    box-shadow: 0.1vw 0.2vw #3498db;
+}
+
+
 /* ------------------
-    End section of the site
+    After graduation
+------------------ */
+
+.after_graduation {
+    background-color: #f39c12; 
+    padding: 3%; 
+}
+
+.after_graduation h3 {
+    color: #8d633e; 
+}
+.after_graduation .subject:hover {
+    background-color:#ffda9f ;
+    box-shadow: 0.1vw 0.2vw #8d633e; /* #7e7e7e */
+}
+
+
+/* ------------------
+    Useful sites
 ------------------ */
 
 .usefulSites a {
     text-decoration: none;
     color: #27ae60;
     display: block;
-    /* border: solid #2c3e50 0.2vw;
-    padding: 0.2%; */
 }
 
 .usefulSites {
@@ -230,6 +293,11 @@ header {
     margin: 5%;
     padding: 2.5%;
     border-radius: 3%;
+    transition: background-color 0.5s ease;
+}
+.usefulSiteItem:hover {
+    background-color: #cbe8f3;
+    box-shadow: 0.1vw 0.2vw #3498db;
 }
 /*-------------------------------------------------
 
@@ -241,6 +309,9 @@ footer {
     background-color: gray;
     padding: 0.5%;
     text-align: center;
+    background-color: #2c3e50; 
+    color: white; 
+
 }
 .footerText {
     display: block;
@@ -331,70 +402,4 @@ footer a {
         padding: 2.5%;
         border-radius: 3%;
     }
-}
-
-/* Header */
-header {
-    background-color: #3498db; /* Blauwe achtergrondkleur */
-    color: white; /* Witte tekstkleur */
-    padding-top: 1%;
-}
-
-.headernav a {
-    color: white; /* Witte tekstkleur voor koppelingen in de header */
-    background-color: #2980b9; /* Donkerder blauwe achtergrondkleur voor koppelingen */
-    padding: 1%; /* Voeg wat opvulling toe aan koppelingen */
-    border: none; /* Verwijder koppelingsranden */
-    border-radius: 4px; /* Voeg afgeronde hoeken toe aan koppelingen */
-    text-align: center; /* Centreer tekst in koppelingen */
-    display: inline-block; /* Maak koppelingen inline-blokken */
-    margin: 1%; /* Voeg wat ruimte toe tussen koppelingen */
-    text-decoration: none; /* Verwijder onderstreping van koppelingen */
-    transition: background-color 0.3s ease; /* Voeg overgangseffect toe aan koppelingen */
-}
-
-.headernav a:hover {
-    background-color: #1c6b99; /* Donkerder blauwe achtergrondkleur bij hover */
-}
-
-/* Introductie */
-.intro {
-    background-color: #ecf0f1; /* Grijze achtergrondkleur voor introductiesectie */
-    padding: 3%; /* Voeg opvulling toe aan de introductiesectie */
-}
-
-/* Algemene informatie */
-.general {
-    background-color: #f2f2f2; /* Lichtgrijze achtergrondkleur voor algemene informatie */
-    padding: 3%; /* Voeg opvulling toe aan de algemene informatie */
-}
-
-.general h3 {
-    color: #e74c3c; /* Rode tekstkleur voor subkopjes */
-}
-
-/* Schoolvakken */
-.subjects {
-    background-color: #dcdde1; /* Zachte blauwe achtergrondkleur voor schoolvakken */
-    padding: 3%; /* Voeg opvulling toe aan de schoolvakken */
-}
-
-.subject h3 {
-    color: #27ae60; /* Groene tekstkleur voor subkopjes */
-}
-
-/* Na de opleiding */
-.after_graduation {
-    background-color: #f39c12; /* Oranje achtergrondkleur voor sectie na de opleiding */
-    padding: 3%; /* Voeg opvulling toe aan de sectie na de opleiding */
-}
-
-.after_graduation h3 {
-    color: #8d633e; /* Oranje tekstkleur voor subkopjes */
-}
-
-/* Footer */
-footer {
-    background-color: #2c3e50; /* Donkerblauwe achtergrondkleur voor footer */
-    color: white; /* Witte tekstkleur voor footer */
 }
