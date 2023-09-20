@@ -94,8 +94,11 @@ header {
 .title {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-
+.title .credit {
+    padding: 0% 4% 0% 0%;
+}
 
 /*-------------------------------------------------
 
