@@ -253,6 +253,7 @@ header {
 }
 .teacher img {
     width: 20%;
+    border-radius: 10vw;
 }
 .teachers {
     background-color: #f2f2f2; /* Or #dcdde1 (same as subjects, orginal: #f2f2f2) */
