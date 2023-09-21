@@ -33,7 +33,7 @@ h2 {
 
 h3 {
     font-size: 120%;
-    margin: 2% 0%;
+    margin: 1% 0%;
 }
 
 
@@ -146,7 +146,7 @@ header {
 }
 
 .generalSubject:hover {
-    background-color: #ebebeb;
+    background-color: #ffffff;
     box-shadow: 0.1vw 0.2vw #3498db; 
 }
 
@@ -158,7 +158,7 @@ header {
 ------------------ */
 
 .subjects {
-    background-color: #dcdde1;
+    background-color: #dfdfdf;
     padding: 3%;
 }
 
@@ -176,7 +176,7 @@ header {
     box-shadow: 0.1vw 0.2vw #27ae60 !important; 
 }
 .subject:hover {
-    background-color: #ebebeb;
+    background-color: #ececec;
     box-shadow: 0.1vw 0.2vw #3498db; 
 }
 
@@ -246,6 +246,10 @@ header {
 }
 .teachertext {
     margin: 1%;
+}
+
+.teacher .name {
+    font-weight: bold;
 }
 .teacher img {
     width: 20%;
@@ -341,7 +345,11 @@ footer a {
       * {
         font-size: small;
       }
-
+      .title a {
+        width: 110vw;
+        margin: 0% 0% 0% 0% ;
+      }
+     
       .flexcontainer {
         display: block;
       }
